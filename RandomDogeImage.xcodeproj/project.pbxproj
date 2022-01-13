@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		3E39B4EC27525DED00CC153C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E39B4EB27525DED00CC153C /* AppDelegate.swift */; };
 		3E39B4EE27525DED00CC153C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E39B4ED27525DED00CC153C /* SceneDelegate.swift */; };
-		3E39B4F027525DED00CC153C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E39B4EF27525DED00CC153C /* ViewController.swift */; };
+		3E39B4F027525DED00CC153C /* DogeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E39B4EF27525DED00CC153C /* DogeViewController.swift */; };
 		3E39B4F327525DED00CC153C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E39B4F127525DED00CC153C /* Main.storyboard */; };
 		3E39B4F527525DF000CC153C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E39B4F427525DF000CC153C /* Assets.xcassets */; };
 		3E39B4F827525DF000CC153C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E39B4F627525DF000CC153C /* LaunchScreen.storyboard */; };
 		3E39B50027525FBE00CC153C /* DogeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E39B4FF27525FBE00CC153C /* DogeImage.swift */; };
+		3EA1966D2790227300B1E57E /* CatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA1966C2790227300B1E57E /* CatViewController.swift */; };
+		3EA1966F2790228100B1E57E /* FoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA1966E2790228100B1E57E /* FoxViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3E39B4E827525DED00CC153C /* RandomDogeImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomDogeImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E39B4EB27525DED00CC153C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E39B4ED27525DED00CC153C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3E39B4EF27525DED00CC153C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3E39B4EF27525DED00CC153C /* DogeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogeViewController.swift; sourceTree = "<group>"; };
 		3E39B4F227525DED00CC153C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E39B4F427525DF000CC153C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E39B4F727525DF000CC153C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E39B4F927525DF000CC153C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E39B4FF27525FBE00CC153C /* DogeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogeImage.swift; sourceTree = "<group>"; };
+		3EA1966C2790227300B1E57E /* CatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatViewController.swift; sourceTree = "<group>"; };
+		3EA1966E2790228100B1E57E /* FoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoxViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +64,9 @@
 			children = (
 				3E39B4EB27525DED00CC153C /* AppDelegate.swift */,
 				3E39B4ED27525DED00CC153C /* SceneDelegate.swift */,
-				3E39B4EF27525DED00CC153C /* ViewController.swift */,
+				3E39B4EF27525DED00CC153C /* DogeViewController.swift */,
+				3EA1966C2790227300B1E57E /* CatViewController.swift */,
+				3EA1966E2790228100B1E57E /* FoxViewController.swift */,
 				3E39B4F127525DED00CC153C /* Main.storyboard */,
 				3E39B4FF27525FBE00CC153C /* DogeImage.swift */,
 				3E39B4F427525DF000CC153C /* Assets.xcassets */,
@@ -142,8 +148,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E39B50027525FBE00CC153C /* DogeImage.swift in Sources */,
-				3E39B4F027525DED00CC153C /* ViewController.swift in Sources */,
+				3E39B4F027525DED00CC153C /* DogeViewController.swift in Sources */,
 				3E39B4EC27525DED00CC153C /* AppDelegate.swift in Sources */,
+				3EA1966D2790227300B1E57E /* CatViewController.swift in Sources */,
+				3EA1966F2790228100B1E57E /* FoxViewController.swift in Sources */,
 				3E39B4EE27525DED00CC153C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,7 +318,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -338,7 +346,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

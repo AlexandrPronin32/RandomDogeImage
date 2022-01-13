@@ -10,10 +10,21 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var dogeImageView: UIImageView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     let link = "https://random.dog/woof.json"
     
+    override func viewDidLoad() {
+        
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.color = .white
+        activityIndicator.style = .large
+        
+    }
+    
     @IBAction func generateImageButton(_ sender: UIButton) {
+        
+        activityIndicator.startAnimating()
         
         guard let url = URL(string: link) else { return }
         
@@ -28,6 +39,7 @@ class ViewController: UIViewController {
                 
                 DispatchQueue.main.async {
                     self.dogeImageView.image = UIImage(data: imageData)
+                    self.activityIndicator.stopAnimating()
                 }
             }
             catch let error {
@@ -36,4 +48,5 @@ class ViewController: UIViewController {
         }.resume()
     }
 }
+
 

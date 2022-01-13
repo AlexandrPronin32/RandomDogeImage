@@ -6,7 +6,13 @@
 //
 
 struct DogeImage: Decodable {
-    let fileSizeBytes: Int
     let url: String
 }
 
+struct CatImage: Decodable {
+    let file: String
+}
+
+struct FoxImage: Decodable {
+    let image: String
+}

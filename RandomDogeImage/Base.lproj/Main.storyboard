@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EPD-1Y-omz">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Dog-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RandomDogeImage" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,6 +36,10 @@
                                     <action selector="generateImageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Qy-LN-yYd"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="QhP-5o-Sqw">
+                                <rect key="frame" x="197" y="301" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="0.86037102437981883" blue="0.96307006096615577" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -47,13 +51,147 @@
                             <constraint firstItem="aiV-IG-Rrf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53" id="g25-dN-e0H"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Dog" image="photo.circle" catalog="system" id="UL8-9R-fi1"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="QhP-5o-Sqw" id="m5a-83-MuO"/>
                         <outlet property="dogeImageView" destination="aiV-IG-Rrf" id="EW2-LB-c0x"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="79.6875"/>
+            <point key="canvasLocation" x="-1296" y="-40"/>
+        </scene>
+        <!--Fox-->
+        <scene sceneID="2t9-aa-D3a">
+            <objects>
+                <viewController id="8Qu-PJ-ocM" customClass="FoxViewController" customModule="RandomDogeImage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XtU-Dd-DEB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d9I-9l-bae">
+                                <rect key="frame" x="20" y="96" width="374" height="429"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="d9I-9l-bae" secondAttribute="height" multiplier="34:39" id="MFO-mt-OwK"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Meq-I2-gbO">
+                                <rect key="frame" x="123.5" y="568" width="167.5" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Ado-fO-7gO"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Give me a fox">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                    <color key="baseForegroundColor" red="0.3120609158" green="0.37205714379999999" blue="0.77034774419999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" red="0.84172106390000001" green="0.5090984033" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="generateImageButton:" destination="8Qu-PJ-ocM" eventType="touchUpInside" id="cVo-HX-gYh"/>
+                                    <action selector="generateImageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zlh-tC-c9M"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="ur5-Dd-Z5d">
+                                <rect key="frame" x="197" y="300" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RhK-GS-8ZA"/>
+                        <color key="backgroundColor" red="0.84055745002110382" green="1" blue="0.93576349659952374" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="d9I-9l-bae" firstAttribute="centerX" secondItem="RhK-GS-8ZA" secondAttribute="centerX" id="0Lt-ug-UKI"/>
+                            <constraint firstItem="Meq-I2-gbO" firstAttribute="top" secondItem="d9I-9l-bae" secondAttribute="bottom" constant="43" id="IJz-Pd-qjy"/>
+                            <constraint firstItem="Meq-I2-gbO" firstAttribute="centerX" secondItem="RhK-GS-8ZA" secondAttribute="centerX" id="dkY-UZ-fjB"/>
+                            <constraint firstItem="d9I-9l-bae" firstAttribute="top" secondItem="RhK-GS-8ZA" secondAttribute="top" constant="52" id="rba-sW-guS"/>
+                            <constraint firstItem="d9I-9l-bae" firstAttribute="leading" secondItem="RhK-GS-8ZA" secondAttribute="leading" constant="20" id="rqQ-gB-Nkh"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Fox" image="photo.circle" catalog="system" id="t0q-3T-mUY"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="ur5-Dd-Z5d" id="DKP-AG-SGb"/>
+                        <outlet property="foxImageView" destination="d9I-9l-bae" id="c0x-dO-Qgz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y6d-u9-0Et" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="632" y="-40"/>
+        </scene>
+        <!--Cat-->
+        <scene sceneID="IVA-h6-jpC">
+            <objects>
+                <viewController id="DTL-2M-JGS" customClass="CatViewController" customModule="RandomDogeImage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WXt-Pe-ZRH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YZp-Xt-peh">
+                                <rect key="frame" x="20" y="97" width="374" height="429"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YZp-Xt-peh" secondAttribute="height" multiplier="34:39" id="xpc-nd-e84"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hca-Ey-xQf">
+                                <rect key="frame" x="122.5" y="569" width="169.5" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="G61-7W-wwm"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Give me a cat">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                    <color key="baseForegroundColor" red="0.3120609158" green="0.37205714379999999" blue="0.77034774419999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" red="0.84172106390000001" green="0.5090984033" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="generateImageButton:" destination="DTL-2M-JGS" eventType="touchUpInside" id="lJP-2W-ffs"/>
+                                    <action selector="generateImageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="okP-WT-Jsv"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="cSI-sd-6Mr">
+                                <rect key="frame" x="197" y="301" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8CN-sL-1J6"/>
+                        <color key="backgroundColor" red="0.81969557368719326" green="0.86746636807947031" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Hca-Ey-xQf" firstAttribute="centerX" secondItem="YZp-Xt-peh" secondAttribute="centerX" id="4KM-eS-Jvy"/>
+                            <constraint firstItem="YZp-Xt-peh" firstAttribute="leading" secondItem="8CN-sL-1J6" secondAttribute="leading" constant="20" id="EmW-IE-lHP"/>
+                            <constraint firstItem="Hca-Ey-xQf" firstAttribute="top" secondItem="YZp-Xt-peh" secondAttribute="bottom" constant="43" id="ZH3-aW-mgM"/>
+                            <constraint firstItem="YZp-Xt-peh" firstAttribute="top" secondItem="8CN-sL-1J6" secondAttribute="top" constant="53" id="kXC-e3-REA"/>
+                            <constraint firstItem="YZp-Xt-peh" firstAttribute="centerX" secondItem="8CN-sL-1J6" secondAttribute="centerX" id="u0U-gy-BKL"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cat" image="photo.circle" catalog="system" id="mNx-l5-ws0"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="cSI-sd-6Mr" id="1hN-qS-ps4"/>
+                        <outlet property="catImageView" destination="YZp-Xt-peh" id="3Ap-Ct-TzZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SdF-2e-RVu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-333" y="-40"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ynf-ZY-xA8">
+            <objects>
+                <tabBarController id="EPD-1Y-omz" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hsU-gN-LsA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="DTL-2M-JGS" kind="relationship" relationship="viewControllers" id="rxE-kp-11o"/>
+                        <segue destination="8Qu-PJ-ocM" kind="relationship" relationship="viewControllers" id="4du-Vd-Iej"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="mgB-4p-B4z"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cmq-CO-kdz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-333" y="-811"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="photo.circle" catalog="system" width="128" height="121"/>
+    </resources>
 </document>
